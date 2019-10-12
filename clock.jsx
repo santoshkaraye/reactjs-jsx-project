@@ -4,9 +4,9 @@ import { render } from 'react-dom';
 class Hello extends React.Component {
 
 
-     tick()
+    tick()
     {
-       this.setState({date: new Date()});
+        this.setState({date: new Date()});
     }
 
     tickAlter = ()=>{this.setState({date: new Date()})};

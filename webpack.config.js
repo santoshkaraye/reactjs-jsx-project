@@ -2,7 +2,7 @@ const path = require("path");
 
 const config = {
 
-    entry: "./main.js",
+    entry: "./clock.jsx",
 
     output: {
 
@@ -20,8 +20,10 @@ const config = {
                     test: /\.jsx?$/,         // Match both .js and .jsx files
                     exclude: /node_modules/,
                     loader: "babel-loader",
+
                     query:
                         {
+
                             presets: ['@babel/react', '@babel/env']
                         }
                 }
