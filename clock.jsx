@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-class Hello extends React.Component {
+class Clock extends React.Component {
 
 
     tick()
@@ -26,7 +26,6 @@ class Hello extends React.Component {
 
         return (
             <div>
-                <h1>Hello, world!</h1>
                 <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
             </div>
 
@@ -37,4 +36,14 @@ class Hello extends React.Component {
 
 }
 
-render(<Hello/>, document.getElementById('app'));
+function APP()
+{
+    return(
+        <div>
+        <Clock/>
+    <Clock/>
+        <Clock/> </div>)
+
+}
+
+render(<Clock/>, document.getElementById('app'));
